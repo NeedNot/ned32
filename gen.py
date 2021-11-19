@@ -33,6 +33,7 @@ data = {}
 data['p'] = hex(p)[2:]
 data['q'] = hex(q)[2:]
 data['n'] = hex(n)[2:]
+data['en'] = "put someone else's mod here"
 data['phi'] = hex(phi)[2:]
 data['e'] = hex(e)[2:]
 data['d'] = hex(d)[2:]
@@ -40,10 +41,11 @@ data['d'] = hex(d)[2:]
 with open('keys.json', 'w') as outfile:
     json.dump(data, outfile)
 
-print("p =", p)
-print("q =", q)
-print("n =", n)
-print("phi =", phi)
-print("e =", e)
-print("d =", d)
+print("p", hex(p)[2:])
+print("q", hex(q)[2:])
+print("n", hex(n)[2:])
+print("phi", hex(phi)[2:])
+print("e", hex(e)[2:])
+print("d", hex(d)[2:])
+print("You should only share N and E, Never anything else! Press enter to close")
 
