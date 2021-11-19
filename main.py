@@ -13,7 +13,6 @@ d = int(data['d'], 16)
 
 def ned32(x):
     i = int.from_bytes(x.encode('ASCII'), byteorder='big')
-    print(i)
     if i >= n:
         return "number is too big"
     if en == "put someone else's mod here":
@@ -34,6 +33,8 @@ x = input("encrypt or decrypt? (e/d): ")
 if x == "e":
     x = str(input("enter something to encrypt: "))
     print(ned32(x))
+    input()	
 if x == "d":
     x = str(input("enter something to decrypt: "))
     print(dened32(x))
+    input()

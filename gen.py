@@ -47,5 +47,5 @@ print("n", hex(n)[2:])
 print("phi", hex(phi)[2:])
 print("e", hex(e)[2:])
 print("d", hex(d)[2:])
-print("You should only share N and E, Never anything else! Press enter to close")
+input("You should only share N and E, Never anything else! Press enter to close")
 
